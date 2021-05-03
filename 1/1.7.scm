@@ -67,5 +67,5 @@
 )
 
 ; And that really works better, both for very low and for very high numbers.
-(vb-sqrt 0.0001)
-(vb-sqrt 10000000000000)
+; (vb-sqrt 0.0001)
+; (vb-sqrt 10000000000000)
