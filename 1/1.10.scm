@@ -37,5 +37,4 @@
 (define (f n) (A 0 n)) ; 2y
 (define (g n) (A 1 n)) ; 2^n
 (define (h n) (A 2 n)) ; 2^2^2^...^2^2 - 2 appear n times
-; Apparently the last one is called tetration and can be notated as
-; 2↑↑n or 2^^n
+; Apparently the last one is called tetration and can be notated as 2^^n
