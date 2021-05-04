@@ -52,19 +52,15 @@
 ; A better good-enough?
 ; If the improved guess changes less than 0.01%, then it's good enough.
 (define (bt-good-enough? guess improved-guess)
-  (< (abs (/ (- improved-guess guess) guess)) 0.0001)
-)
+  (< (abs (/ (- improved-guess guess) guess)) 0.0001))
 
 (define (vb-sqrt-iter guess x)
   (if (bt-good-enough? guess (improve guess x))
       guess
-      (vb-sqrt-iter (v-improve guess x) x)
-  )
-)
+      (vb-sqrt-iter (v-improve guess x) x)))
 
 (define (vb-sqrt x)
-  (vb-sqrt-iter 1.0 x)
-)
+  (vb-sqrt-iter 1.0 x))
 
 ; And that really works better, both for very low and for very high numbers.
 ; (vb-sqrt 0.0001)

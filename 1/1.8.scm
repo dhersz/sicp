@@ -22,10 +22,7 @@
 (define (cb-iter guess x)
   (if (bt-good-enough? guess (improve-cube guess x))
       guess
-      (cb-iter (improve-cube guess x) x)
-  )
-)
+      (cb-iter (improve-cube guess x) x)))
 
 (define (cbrt x)
-  (cb-iter 1.0 x)
-)
+  (cb-iter 1.0 x))
