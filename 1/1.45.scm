@@ -15,6 +15,9 @@
 ; load 'fixed-point-print'
 (load "1/1.36.scm")
 
+; load 'repeated'
+(load "1/1.43.scm")
+
 ; load 'average'
 (load "common.scm")
 
@@ -66,6 +69,6 @@
 ; 1.01098044346786
 (nth-root 4 128)
 ; 1.01088928649741
-(nth-root-test 32 5)
+(nth-root 32 5)
 ; 2.00000151299576
 
